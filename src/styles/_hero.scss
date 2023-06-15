@@ -33,4 +33,13 @@
         color: variaveis.$textColor;
         
     }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
 }
