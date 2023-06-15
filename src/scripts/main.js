@@ -19,7 +19,7 @@ const timeStampDaFesta = dataDaFesta.getTime();
     const segundosAteAfesta = Math.floor((distanciaAteAfesta % minutoEmMs) / 1000);
     
 
-    document.getElementById('contador').innerHTML = `Faltam somente ${diasAteAfesta}d ${horasAteAfesta}h ${minutosAteAfesta}m ${segundosAteAfesta}s para começar a festa!`;
+    document.getElementById('contador').innerHTML = `Faltam somente ${diasAteAfesta}d ${horasAteAfesta}h ${minutosAteAfesta}m ${segundosAteAfesta}s para a festa!`;
 
     if(distanciaAteAfesta < 0 ) {
         clearInterval(contaAsHoras);
