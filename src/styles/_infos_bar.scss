@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.infos-bar {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: variaveis.$textColor;
+    margin-top: 64px;
+
+    &__infos {
+        display: flex;
+        gap: 60px;
+
+
+        &__item {
+            font-size: 14px;
+            color: variaveis.$textSecondaryColor;
+
+            b {
+                color: variaveis.$textSecondaryColor;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+    .button {
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 8px;
+        color: variaveis.$textColor;
+        background-color: variaveis.$colorButton;
+        
+        &:hover {
+            opacity: .9;
+            scale: 110%;
+        }
+    }
+}
+

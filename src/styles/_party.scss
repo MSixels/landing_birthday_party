@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.party {
+    padding: 80px 0;
+
+    &--food {
+        background-image: linear-gradient(variaveis.$green1, variaveis.$green2);
+    }
+
+    &--drink {
+        background-image: linear-gradient(variaveis.$green2, variaveis.$red);
+    }
+
+    &--fun {
+        background-image: linear-gradient(variaveis.$red, variaveis.$orange);
+    }
+
+    &--gift {
+        background-image: linear-gradient(variaveis.$orange, variaveis.$red);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image{
+        width: 360px;
+    }
+
+    &__detail {
+        
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+}
